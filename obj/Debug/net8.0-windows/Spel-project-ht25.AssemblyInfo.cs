@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Spel-project-ht25")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5da84e257c790152f5009b39c0a949031e7b5af0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b3f5446f071c516bda890c1e6600736ae48403c3")]
 [assembly: System.Reflection.AssemblyProductAttribute("Spel-project-ht25")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Spel-project-ht25")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
