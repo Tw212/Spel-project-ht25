@@ -10,6 +10,7 @@ public class Game1 : Game
     private SpriteBatch _spriteBatch;
     Grid grid;
     Texture2D rec;
+    Texture2D apple;
 
     public Game1()
     {
@@ -30,6 +31,7 @@ public class Game1 : Game
         _spriteBatch = new SpriteBatch(GraphicsDevice);
         rec = new Texture2D(GraphicsDevice, 1, 1);
         rec.SetData([Color.Green]);
+        apple = Content.Load<Texture2D>("pngtree-apple-fruit-cartoon-apple-cartoon-fruit-png-image_330305.png");
 
 
         // TODO: use this.Content to load your game content here
