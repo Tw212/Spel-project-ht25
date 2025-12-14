@@ -25,3 +25,15 @@
 /processorParam:TextureFormat=Color
 /build:pngtree-apple-fruit-cartoon-apple-cartoon-fruit-png-image_330305.png
 
+#begin reen-block-11563665390uel60ahr8p.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:reen-block-11563665390uel60ahr8p.png
+

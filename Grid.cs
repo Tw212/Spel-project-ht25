@@ -9,20 +9,49 @@ namespace Spel_project_ht25
 {
     public class Grid
     {
-        int numOfCells = 20;
-        int cellSize = 10;
-        public void Gridspace(SpriteBatch g, Texture2D p)
+
+
+
+
+
+        private int numOfCells;
+        private int cellSize;
+        //private Vector2 position;
+        private Color color = Color.LimeGreen;
+
+        public Grid(Texture2D rec, int numOfCells, int cellSize/*,Vector2 position*/)
         {
-            for (int x = 0; x < numOfCells; ++x)
+            this.numOfCells = numOfCells;
+            this.cellSize = cellSize;
+            //this.position = position;
+        }
+
+        public void Gridspace(SpriteBatch spriteBatch, Texture2D rec)
+        {
+            int gridSize = numOfCells * cellSize;
+
+
+
+
+            for (int x = 0; x <= numOfCells; x++)
             {
-                for (int y = 0; y < numOfCells; ++y)
-                {
-                    Rectangle rec = new(x*cellSize, y*cellSize, cellSize, cellSize);
-                    g.Draw(p, rec, Color.Green);
-                }
-                
+                spriteBatch.Draw(
+                    rec,
+                    new Rectangle(x * cellSize, 0, 1, gridSize),
+                    color
+                );
+            }
+
+            
+        
+            for (int y = 0; y <= numOfCells; y++)
+            {
+                spriteBatch.Draw(
+                    rec,
+                    new Rectangle(0, y * cellSize, gridSize, 1),
+                    color
+                );
             }
         }
-        
     }
-}
+} 

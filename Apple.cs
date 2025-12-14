@@ -11,6 +11,7 @@ namespace Spel_project_ht25
     {
         public Object apple;
         public int mat;
-        public Vector2 position;  
+        public Vector2 position;
+        public Rectangle hitboxa;
     }
 }

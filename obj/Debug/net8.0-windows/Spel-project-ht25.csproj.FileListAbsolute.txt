@@ -25,3 +25,5 @@ C:\Github\Spel-project-ht25\obj\Debug\net8.0-windows\refint\Spel-project-ht25.dl
 C:\Github\Spel-project-ht25\obj\Debug\net8.0-windows\Spel-project-ht25.pdb
 C:\Github\Spel-project-ht25\obj\Debug\net8.0-windows\Spel-project-ht25.genruntimeconfig.cache
 C:\Github\Spel-project-ht25\obj\Debug\net8.0-windows\ref\Spel-project-ht25.dll
+C:\Github\Spel-project-ht25\bin\Debug\net8.0-windows\Content\pngtree-apple-fruit-cartoon-apple-cartoon-fruit-png-image_330305.xnb
+C:\Github\Spel-project-ht25\bin\Debug\net8.0-windows\Content\reen-block-11563665390uel60ahr8p.xnb

@@ -8,9 +8,11 @@ public class Game1 : Game
 {
     private GraphicsDeviceManager _graphics;
     private SpriteBatch _spriteBatch;
-    Grid grid;
-    Texture2D rec;
-    Texture2D apple;
+    private Grid grid;
+    private Texture2D rec;
+    private Texture2D apple;
+    private Player player;
+    private Texture2D snake;
 
     public Game1()
     {
@@ -30,10 +32,11 @@ public class Game1 : Game
     {
         _spriteBatch = new SpriteBatch(GraphicsDevice);
         rec = new Texture2D(GraphicsDevice, 1, 1);
-        rec.SetData([Color.Green]);
-        apple = Content.Load<Texture2D>("pngtree-apple-fruit-cartoon-apple-cartoon-fruit-png-image_330305.png");
-
-
+        rec.SetData(new[] { Color.Green });
+        apple = Content.Load<Texture2D>("pngtree-apple-fruit-cartoon-apple-cartoon-fruit-png-image_330305");
+        snake = Content.Load<Texture2D>("reen-block-11563665390uel60ahr8p");
+        player = new Player(snake, new Vector2(200, 200), 5);
+        grid = new Grid(rec, 10, 10);
         // TODO: use this.Content to load your game content here
     }
 
@@ -42,15 +45,18 @@ public class Game1 : Game
         if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
             Exit();
 
-        // TODO: Add your update logic here
+        
 
+        // TODO: Add your update logic here
+        player.Update();    
         base.Update(gameTime);
     }
 
     protected override void Draw(GameTime gameTime)
     {
-        GraphicsDevice.Clear(Color.CornflowerBlue);
+        GraphicsDevice.Clear(Color.Green);
         _spriteBatch.Begin();
+        player.Draw(_spriteBatch);
         grid.Gridspace(_spriteBatch, rec);
         _spriteBatch.End();
         // TODO: Add your drawing code here
