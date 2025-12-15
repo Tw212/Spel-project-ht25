@@ -13,7 +13,6 @@ namespace Spel_project_ht25
         private KeyboardState KState; 
         private Texture2D snake;
         private Vector2 postitions;
-        private int v;
         private Rectangle hitbox;
 
         public Rectangle Hitbox
@@ -64,7 +63,7 @@ namespace Spel_project_ht25
                 postitions.X += 100;
             }
             hitbox.X = (int)postitions.X;
-    hitbox.Y = (int)postitions.Y;
+            hitbox.Y = (int)postitions.Y;
         }
         public void Draw(SpriteBatch spriteBatch)
         {
